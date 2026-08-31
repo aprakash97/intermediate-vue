@@ -18,7 +18,7 @@ const isHomePage = computed(() => route.path === '/')
     >
       <div class="navbar-start">
         <RouterLink to="/" class="btn btn-ghost text-xl font-bold text-primary">
-          <BaseIcon source="custom" name="IconMountain" />
+          <BaseIcon source="custom" name="IconTest" />
           Point of Vue
         </RouterLink>
       </div>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, defineAsyncComponent } from 'vue'
 import { Icon } from '@iconify/vue'
-import IconMountain from './icons/IconMountain.vue'
 
 const props = defineProps({
   name: {
