@@ -3,6 +3,7 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue'
 
 import { computed } from 'vue'
+import BaseIcon from './components/BaseIcon.vue'
 
 const route = useRoute()
 
@@ -17,7 +18,9 @@ const isHomePage = computed(() => route.path === '/')
     >
       <div class="navbar-start">
         <RouterLink to="/" class="btn btn-ghost text-xl font-bold text-primary">
-          <Icon icon="lucide:target" width="24" height="24" />
+          <!-- <Icon icon="lucide:target" width="24" height="24" /> -->
+          <!-- TODO 1: Wrapper for centralizing icon with single source of truth. -->
+          <BaseIcon name="IconCompanyLogo" source="custom" />
           Point of Vue
         </RouterLink>
       </div>

@@ -32,4 +32,8 @@ export const routes = [
     name: 'NotFound',
     component: () => import('../views/NotFoundPage.vue'),
   },
+  {
+    path: '/sandbox',
+    component: () => import('../views/SandBox.vue'),
+  },
 ]
