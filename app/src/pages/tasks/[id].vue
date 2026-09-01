@@ -6,7 +6,7 @@ import { useTaskStore } from '@/stores/taskStore'
 import { useTimeEntryStore } from '@/stores/timeEntryStore'
 import DeleteConfirmModal from '@/components/DeleteConfirmModal.vue'
 import TimeEntryFormModal from '@/components/TimeEntryFormModal.vue'
-import type { Task, Week, TaskStatus, TaskArea, TimeEntry } from '@/types'
+import type { Task, Week, TaskStatus, TimeEntry } from '@/types'
 
 // Router setup
 const route = useRoute()
@@ -30,7 +30,7 @@ const deleteTimeEntry = (timeEntryId: string) => timeEntryStore.deleteTimeEntry(
 // Use store for task management
 const tasks = computed(() => taskStore.tasks)
 const taskIsLoading = computed(() => taskStore.isLoading)
-const taskError = computed(() => taskStore.error)
+// const taskError = computed(() => taskStore.error)
 
 // Task actions - delegate to store
 const fetchTasks = () => taskStore.fetchTasks()

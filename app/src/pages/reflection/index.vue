@@ -2,9 +2,9 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import { Icon } from '@iconify/vue'
 
-import { useTimeEntryStore } from '../stores/timeEntryStore'
-import { useTaskStore } from '../stores/taskStore'
-import type { Task, Week, TimeEntry } from '../types'
+import { useTimeEntryStore } from '../../stores/timeEntryStore'
+import { useTaskStore } from '../../stores/taskStore'
+import type { Task, Week, TimeEntry } from '../../types'
 
 // Use the time entries store
 const timeEntryStore = useTimeEntryStore()
